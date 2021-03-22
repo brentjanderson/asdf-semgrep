@@ -6,7 +6,7 @@ set -o pipefail
 
 : "${GITHUB_API_TOKEN:=""}"
 
-readonly RELEASES_URL="https://api.github.com/repos/brentjanderson/asdf-semgrep/releases"
+readonly RELEASES_URL="https://api.github.com/repos/returntocorp/semgrep/releases"
 
 #
 # https://github.com/rbenv/ruby-build/blob/ac92ec0507fad718e7abcf13540641937ecfef3f/bin/ruby-build#L1201
