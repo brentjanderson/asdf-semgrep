@@ -30,8 +30,6 @@ install_semgrep_cli() {
       ;;
   esac
 
-  echo $filename
-
   local old_filename="semgrep_${version}_${platform}"
   local download_url="$(get_download_url $filename)"
   local tmp_bin_path="${TMPDIR}/${filename}"
@@ -64,9 +62,6 @@ install_semgrep_cli() {
 
   echo "Run: asdf current semgrep-cli ${version}"
   chmod a+x $bin_path
-
-  ls -la $install_path
-  ls -la $bin_path
 }
 
 get_download_url() {
