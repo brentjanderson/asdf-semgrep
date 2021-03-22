@@ -64,7 +64,7 @@ install_semgrep_cli() {
   rm -rf $tmp_path $tmp_bin_path
 
   echo "Run: asdf current semgrep-cli ${version}"
-  chmod +x $bin_path
+  chmod a+x $bin_path
 }
 
 get_download_url() {
