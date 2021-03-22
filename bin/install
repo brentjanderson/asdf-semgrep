@@ -57,6 +57,7 @@ install_semgrep_cli() {
 
   echo "Run: asdf current semgrep-cli ${version}"
   echo $bin_path
+  ls -la $bin_path
   chmod +x $bin_path
 }
 
