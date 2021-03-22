@@ -54,7 +54,7 @@ install_semgrep_cli() {
   echo "Moving bin to ${bin_path}"
   if [[ $filename == *tgz ]]
   then
-    cp $tmp_path/semgrep-core $bin_path
+    cp $tmp_path/semgrep-temp/semgrep-core $bin_path
   else
     cp $tmp_path/artifacts/semgrep-core $bin_path
   fi
